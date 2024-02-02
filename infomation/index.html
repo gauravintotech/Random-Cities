@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>City Information</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <div class="logo">Random Cities</div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Maps</a></li>
+                <li><a href="../weather/index.html">Weather</a></li>
+                <li><a href="../infomation/index.html">Information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Select a City</h1>
+        <select id="citySelect" onchange="getCityInfo()">
+            <option value="Chicago">Chicago</option>
+            <option value="St Louis">St Louis</option>
+            <option value="Joplin, MO">Joplin, MO</option>
+            <option value="Oklahoma City">Oklahoma City</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Gallup, NM">Gallup, NM</option>
+            <option value="Flagstaff, AZ">Flagstaff, AZ</option>
+            <option value="Winona">Winona</option>
+            <option value="Kingman">Kingman</option>
+            <option value="Barstow">Barstow</option>
+            <option value="San Bernardino">San Bernardino</option>
+            <option value="Los Angeles">Los Angeles</option>
+        </select>
+
+        <div id="cityInfo" class="city-info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
